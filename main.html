@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Heading -->
+  <h1 role="heading">My Portfolio</h1>
+
+  <!-- Navigation -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Image -->
+  <img role="img" src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg" alt="Portrait of Yogesh Khatake" width='200'>
+
+  <!-- Description -->
+  <p id="about">
+    Hello! I’m Yogesh Khatake, a MERN stack developer passionate about building accessible and responsive web applications.
+  </p>
+
+  <!-- Project List -->
+  <h2 role="heading" id="projects">My Projects</h2>
+  <ul role="list">
+    <li role="listitem">Doctor Appointment Booking System</li>
+    <li role="listitem">Expense Tracker System</li>
+    <li role="listitem">Movie Web Panel with TMDB API</li>
+  </ul>
+
+  <!-- Contact Section -->
+  <h2 role="heading" id="contact">Contact Me</h2>
+  <p>Email: <a href="mailto:yogesh@example.com">yogesh@example.com</a></p>
 
 </body>
-
 </html>
